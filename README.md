@@ -215,7 +215,7 @@ If you encounter any issues or have questions:
 
 1. Check the [Issues](https://github.com/yourusername/weather-check/issues) page
 2. Create a new issue with detailed information
-3. Contact the maintainer at your-email@example.com
+
 
 ## 🔮 Future Enhancements
 
@@ -230,6 +230,6 @@ If you encounter any issues or have questions:
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Amit**
 
 *Last updated: January 2024*
