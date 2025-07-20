@@ -4,32 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Check - Real-time Weather Information</title>
-    <meta name="description" content="Get real-time weather information for any location worldwide. Check temperature, humidity, wind speed, and more.">
-    <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed, weather app">
-    <link rel="stylesheet" href="style.css">
+    <title>WeatherScope - Advanced Weather Application</title>
+    <meta name="description" content="Get comprehensive real-time weather information for any location worldwide. Features include current conditions, forecasts, favorites, and more.">
+    <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed, weather app, real-time weather, weather conditions">
+    <meta name="author" content="WeatherScope Team">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="WeatherScope - Advanced Weather Application">
+    <meta property="og:description" content="Get comprehensive real-time weather information for any location worldwide.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://weatherscope.app">
+    <meta property="og:image" content="https://weatherscope.app/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WeatherScope - Advanced Weather Application">
+    <meta name="twitter:description" content="Get comprehensive real-time weather information for any location worldwide.">
+    <meta name="twitter:image" content="https://weatherscope.app/twitter-image.jpg">
+    
+    <!-- Favicon and App Icons -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="WeatherScope">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://api.weatherapi.com">
+    <link rel="preconnect" href="https://cdn.weatherapi.com">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "WeatherScope",
+        "description": "Advanced weather application providing real-time weather information",
+        "url": "https://weatherscope.app",
+        "applicationCategory": "Weather",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <h2>Weather Check</h2>
-        <div class="input-group">
-            <input 
-                type="text" 
-                id="location" 
-                placeholder="Enter city name or location..."
-                autocomplete="off"
-                spellcheck="false"
-            >
-        </div>
-        <button onclick="getWeather()" aria-label="Get weather information">
-            Get Weather
-        </button>
-        <div id="result" aria-live="polite"></div>
+    <div class="app-container">
+        <main class="main-card" role="main">
+            <header class="header">
+                <h1 class="app-title">WeatherScope</h1>
+                <p class="app-subtitle">Your comprehensive weather companion</p>
+            </header>
+
+            <section class="search-section" aria-label="Weather search">
+                <div class="search-container">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="location" 
+                            class="search-input"
+                            placeholder="Enter city name or location..."
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="Enter location for weather search"
+                            aria-describedby="search-help"
+                        >
+                    </div>
+                    <div class="btn-group">
+                        <button 
+                            id="getWeatherBtn" 
+                            class="btn" 
+                            aria-label="Get weather information"
+                            title="Search weather (Ctrl+K)"
+                        >
+                            🔍 Search
+                        </button>
+                        <button 
+                            id="getCurrentLocationBtn" 
+                            class="btn btn-secondary" 
+                            aria-label="Use current location"
+                            title="Use current location (Ctrl+L)"
+                        >
+                            📍 My Location
+                        </button>
+                        <button 
+                            id="addFavoriteBtn" 
+                            class="btn" 
+                            aria-label="Add to favorites"
+                            disabled
+                        >
+                            ⭐ Add Favorite
+                        </button>
+                    </div>
+                </div>
+                <div id="search-help" class="sr-only">
+                    Use Ctrl+K to focus search, Ctrl+L for current location, Ctrl+D to toggle theme
+                </div>
+            </section>
+
+            <section id="result" aria-live="polite" aria-label="Weather results"></section>
+        </main>
     </div>
 
+    <!-- Screen reader only content -->
+    <div class="sr-only">
+        <h2>Keyboard Shortcuts</h2>
+        <ul>
+            <li>Ctrl+K: Focus search input</li>
+            <li>Ctrl+L: Get current location weather</li>
+            <li>Ctrl+D: Toggle dark theme</li>
+            <li>Enter: Search weather when input is focused</li>
+        </ul>
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
+    
+    <!-- Analytics (replace with your tracking code) -->
+    <script>
+        // Add your analytics code here
+        // Example: Google Analytics, Plausible, etc.
+    </script>
 </body>
 
 </html>
+
+<style>
+/* Screen reader only content */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+</style>
