@@ -346,15 +346,15 @@ SOFTWARE.
 ## 📞 Support & Contact
 
 ### Getting Help
-- 📖 Check the [Documentation](https://github.com/yourusername/weatherscope/wiki)
-- 🐛 Report bugs in [Issues](https://github.com/yourusername/weatherscope/issues)
-- 💬 Join discussions in [Discussions](https://github.com/yourusername/weatherscope/discussions)
-- 📧 Email: support@weatherscope.app
+- 📖 Check the [Documentation](https://github.com/ARDYN-1/weatherscope/wiki)
+- 🐛 Report bugs in [Issues](https://github.com/ARDYN-1/weatherscope/issues)
+- 💬 Join discussions in [Discussions](https://github.com/ARDYN-1/weatherscope/discussions)
+- 📧 Email: ardynamit@gmail.com
 
 ### Community
 - 🌟 Star the repository if you find it useful
 - 🐦 Follow us on [Twitter](https://twitter.com/weatherscope)
-- 💼 Connect on [LinkedIn](https://linkedin.com/company/weatherscope)
+- 💼 Connect on [LinkedIn](https://www.linkedin.com/in/amit-pramanik-4b4437191/)
 
 ## 🔮 Roadmap & Future Enhancements
 
