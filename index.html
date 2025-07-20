@@ -4,21 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Check</title>
+    <title>Weather Check - Real-time Weather Information</title>
+    <meta name="description" content="Get real-time weather information for any location worldwide. Check temperature, humidity, wind speed, and more.">
+    <meta name="keywords" content="weather, forecast, temperature, humidity, wind speed, weather app">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
 </head>
 
 <body>
     <div class="container">
         <h2>Weather Check</h2>
-        <input type="text" id="location" placeholder="Enter location">
-        <button onclick="getWeather()">Get Weather</button>
-        <div id="result"></div>
+        <div class="input-group">
+            <input 
+                type="text" 
+                id="location" 
+                placeholder="Enter city name or location..."
+                autocomplete="off"
+                spellcheck="false"
+            >
+        </div>
+        <button onclick="getWeather()" aria-label="Get weather information">
+            Get Weather
+        </button>
+        <div id="result" aria-live="polite"></div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
