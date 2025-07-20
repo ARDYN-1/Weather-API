@@ -34,13 +34,13 @@ Experience WeatherScope in action: [View Live Demo](https://your-demo-link.com)
 ## 📱 Screenshots
 
 ### Desktop Experience
-![Desktop View](https://images.unsplash.com/photo-1592210454359-9043f067919b?w=600&h=400&fit=crop&crop=center)
+![Desktop View]
 
 ### Mobile Experience
-![Mobile View](https://images.unsplash.com/photo-1551808525-51a94da548ce?w=300&h=500&fit=crop&crop=center)
+![Mobile View]
 
 ### Dark Theme
-![Dark Theme](https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&h=400&fit=crop&crop=center)
+![Dark Theme]
 
 ## 🛠️ Technology Stack
 
