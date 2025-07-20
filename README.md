@@ -2,7 +2,7 @@
 
 A modern, feature-rich weather application that provides comprehensive real-time weather information for any location worldwide. Built with vanilla HTML, CSS, and JavaScript, featuring a stunning glassmorphism design, dark theme support, and Progressive Web App capabilities.
 
-![WeatherScope Preview](https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=400&fit=crop&crop=center)
+![WeatherScope Preview]
 
 ## ✨ Key Features
 
