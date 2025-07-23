@@ -29,7 +29,7 @@ A modern, feature-rich weather application that provides comprehensive real-time
 
 ## 🚀 Live Demo
 
-Experience WeatherScope in action: [View Live Demo](https://your-demo-link.com)
+Experience WeatherScope in action: [View Live Demo](https://weathercheckuse.netlify.app/)
 
 ## 📱 Screenshots
 
